@@ -17,13 +17,6 @@
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="28sp" />
-
-        <ImageView
-            android:id="@+id/imageViewBack"
-            android:visibility="gone"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            app:srcCompat="@drawable/arrow_back" />
     </RelativeLayout>
 
 </LinearLayout>
