@@ -11,10 +11,18 @@ class HomeActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.`activity_home`)
         val buttonInfo = findViewById<Button>(R.id.buttonInfo)
+        val buttonProduits = findViewById<Button>(R.id.buttonProduits)
         setHeaderTxt("Accueil")
+
+
 
         buttonInfo.setOnClickListener(View.OnClickListener {
             val intent = Intent(application, StudentInfoActivity::class.java)
+            startActivity(intent)
+        })
+
+        buttonProduits.setOnClickListener(View.OnClickListener {
+            val intent = Intent(application, CategoriesActivity::class.java)
             startActivity(intent)
         })
     }
