@@ -20,11 +20,13 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/buttonInfo"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:text="Info" />
+            android:text="Info Etudiant" />
 
         <Button
+            android:id="@+id/buttonProduits"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:text="Produits" />
