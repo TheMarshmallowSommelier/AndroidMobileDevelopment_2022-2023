@@ -22,9 +22,7 @@ Voici les règles du projet :
 
 ![Projet EPSI](https://cdn.discordapp.com/attachments/1060313894343680033/1073172985571188796/EpsiProjet2023FullStack.jpg)
 
-## Auteurs
-- Eliott BERNARD
-- Geo MERCORE
+## Auteur
 - Joey FRIMIN
 
 ## Professeur
