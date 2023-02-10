@@ -2,12 +2,9 @@ package fr.epsi.androidmobiledevelopment_2022_2023
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ArrayAdapter
 import android.widget.ListView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import fr.epsi.androidmobiledevelopment_2022_2023.BaseActivity
-import fr.epsi.androidmobiledevelopment_2022_2023.R
 import okhttp3.*
 import java.io.IOException
 
