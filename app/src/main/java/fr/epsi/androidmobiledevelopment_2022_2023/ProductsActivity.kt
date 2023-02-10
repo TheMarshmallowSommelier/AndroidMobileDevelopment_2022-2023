@@ -55,14 +55,10 @@ class ProductsActivity : BaseActivity() {
                 }
 
                 runOnUiThread {
-                    val products = productsModel.items.map { it.name }
-                    val adapter = ArrayAdapter(
-                        this@ProductsActivity,
-                        android.R.layout.simple_list_item_1,
-                        products
-                    )
+                    val adapter = ProductAdapter(this@ProductsActivity, productsModel.items)
                     productsList.adapter = adapter
                 }
+
             }
         })
     }
