@@ -1,5 +1,6 @@
 package fr.epsi.androidmobiledevelopment_2022_2023
 
+import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -40,6 +41,14 @@ class CategoriesActivity : BaseActivity() {
                 val responseBody = response.body?.string()
                 val categoriesType = object : TypeToken<CategoriesModel>() {}.type
                 val categoriesModel = Gson().fromJson<CategoriesModel>(responseBody, categoriesType)
+                categoriesList.setOnItemClickListener { parent, view, position, id ->
+                    val category = categoriesModel.items[position]
+                    val intent = Intent(this@CategoriesActivity, ProductsActivity::class.java)
+                    val categoryJson = Gson().toJson(category)
+                    intent.putExtra("category", categoryJson)
+                    startActivity(intent)
+
+                }
 
                 runOnUiThread {
                     val categories = categoriesModel.items.map { it.title }
