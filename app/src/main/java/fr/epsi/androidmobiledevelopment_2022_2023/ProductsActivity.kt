@@ -49,7 +49,7 @@ class ProductsActivity : BaseActivity() {
                     val product = productsModel.items[position]
                     val intent = Intent(this@ProductsActivity, ProductDetailsActivity::class.java)
                     val productJson = Gson().toJson(product)
-                    intent.putExtra("category", productJson)
+                    intent.putExtra("product", productJson)
                     startActivity(intent)
 
                 }
